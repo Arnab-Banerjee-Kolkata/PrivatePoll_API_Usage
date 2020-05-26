@@ -1,0 +1,14 @@
+API endpoint name:  StartElection.php
+
+
+POST parameters:
+    postAuthKey:  our auth key
+    pollId:   poll id of election
+    emailId:  account id of election host
+    
+    
+Response parameters:
+    success:  boolean
+    validAuth:  boolean
+    validAccount: boolean
+    validPoll:  boolean
