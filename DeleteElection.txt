@@ -1,0 +1,12 @@
+API endpoint name:  DeleteElection.php
+
+POST parameters:
+    postAuthKey:  our auth key
+    pollId: poll id of election
+    emailId: email id of election host(account)
+    
+Response parameters:
+    success:  boolean
+    validAuth: boolean
+    validAccount: boolean
+    validPoll:  boolean (false for invalid id and invalid emailId and status=0,2,3)
