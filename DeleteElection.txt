@@ -9,4 +9,4 @@ Response parameters:
     success:  boolean
     validAuth: boolean
     validAccount: boolean
-    validPoll:  boolean (false for invalid id and invalid emailId and status=0,2,3)
+    validPoll:  boolean (false for invalid id and invalid emailId and status not equals to 0,2,3)
