@@ -1,0 +1,14 @@
+API endpoint name:  StopElection.php
+
+POST parameters:
+    postAuthKey:  our auth key
+    pollId: poll id of election
+    emailId: email id of election host(account)
+    endCode:  end code of election
+    
+Response parameters:
+    success:  boolean
+    validAuth: boolean
+    validAccount: boolean
+    validPoll:  boolean (false for invalid id and invalid emailId and status not equals to 0,2,3)
+    validEndCode: boolean
