@@ -3,11 +3,11 @@ API endpoint name: AccountLogin.php
 POST parameters:
       postAuthKey: Our auth key
       emailId: String email id of user
-      otp: Integer OTP of user account
+      password: String password of user account
       
       
 Response parameters:
       success: boolean
       validAuth: boolean
       validEmail: boolean(false for invalid or logged in or suspended account)
-      validOtp: boolean(false for invalid or incorrect OTP)
+      validPassword: boolean(false for invalid or incorrect password)
