@@ -2,9 +2,12 @@ API endpoint name: CreateAccount.php
 
 POST parameters:
     postAuthKey: our auth key
-    emailId: string email id 
+    emailId: string email id
+    password: string password
     
     
 Response paramters:
-    success: boolean (false for invalid email id)
-    validAuth: boolean
+    success: boolean
+    validAuth:  boolean
+    validEmail: boolean
+    validPassword:  boolean
