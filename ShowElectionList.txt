@@ -1,0 +1,19 @@
+API endpoint name:  ShowElectionList.php
+
+POST parameters:
+    postAuthKey:  our auth key
+    emailId:  string email id(account)
+    
+    
+Response parameters:
+    success:  boolean
+    validAuth:  boolean
+    validEmail: boolean(false for invalid account or account not logged in)
+    createdList:  json array where each element contains
+                  id: integer id
+                  entryCode: string entry code
+                  endCode: string end code
+                  type: integer type of election
+                  maxVotes: integer max votes allowed(can be null)
+                  status: integer status of election(can be null)
+                  topic: string topic
