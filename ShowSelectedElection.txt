@@ -1,0 +1,22 @@
+API endpoint name: ShowSelectedElection.php
+
+POST parameters:
+      postAuthKey: our auth key
+      emailId: string email id(account)
+      pollId: integer poll id
+      
+      
+Response parameters:
+      success: boolean
+      validAuth: boolean
+      validEmail: boolean
+      validPoll: boolean
+      maxVotes: integer
+      options: JSON array where each element has  [this response is present only when the election is completed]
+                optionId: integer option id
+                optionName: string option name
+                voteCount: integer total vote count
+      status: integer status of election
+      topic: string topic
+      entryCode: string entry code  [this response is present only when the election is not completed or not suspended]
+      endCode: string end code  [this response is present only when the election is not completed or not suspended]
