@@ -1,0 +1,17 @@
+API endpoint name: EditPoll.php
+
+
+POST parameters:
+        postAuthKey:  our auth key
+        emailId:  string email id(account)
+        pollId: poll id
+        maxVotes: maximum number of votes
+        topic: topic of election
+        options: array of option names  {eg: options[0] ,..., options[n]}
+        
+        
+Response parameters:
+        success: boolean
+        validAuth: boolean
+        validEmail: boolean (false for invalid account or not logged in)
+        validPoll: boolean (false for account and poll id not unique and status other than pending)
