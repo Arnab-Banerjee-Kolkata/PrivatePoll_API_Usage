@@ -15,3 +15,4 @@ Response parameters:
         validAuth: boolean
         validEmail: boolean (false for invalid account or not logged in)
         validPoll: boolean (false for account and poll id not unique and status other than pending)
+        validOptions: boolean (false for option names not unique)
