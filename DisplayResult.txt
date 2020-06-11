@@ -4,12 +4,14 @@ API endpoint name: DisplayResult.php
 POST parameters:
         postAuthKey: our auth key
         pollId: poll id
+        emailId: email id of creator or voter (account)
         
         
 Response parameters:
         success: boolean
         validAuth: boolean
         validPoll: boolean (false for invalid poll id or incomplete election)
+        validUser: boolean (false for invalid voter or invalid creator)
         results: JSON array where each element contains
                   optionName: string option name
                   voteCount: integer vote count
