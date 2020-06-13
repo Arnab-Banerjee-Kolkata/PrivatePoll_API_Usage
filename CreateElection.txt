@@ -1,0 +1,19 @@
+API endpoint name: CreateElection.php
+
+POST parameters:
+      postAuthKey: our auth key
+      emailId: string email id (account)
+      maxVotes: integer max votes
+      topic: string topic of election
+      options: array of option names (eg: options[0],....,options[n])
+      
+      
+Response parameters:
+      success: boolean
+      validAuth: boolean
+      validEmail: boolean
+      validMaxVotes: boolean (false for values 0 and less than 0,can be null)
+      validOptions: boolean (false for options not unique or array empty)
+      pollId: integer poll id of created election
+      entryCode: string entry code
+      endCode: string end code
