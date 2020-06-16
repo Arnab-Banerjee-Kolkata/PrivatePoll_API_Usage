@@ -1,0 +1,17 @@
+API endpoint name: JoinElection.php
+
+
+POST parameters:
+        postAuthKey: our auth key
+        pollId: integer poll id
+        entryCode: string entry code
+        
+        
+Response parameters:
+        success: boolean
+        validAuth: boolean
+        validPoll: boolean (false for invalid poll id or poll status not active)
+        validEntryCode: boolean
+        votingPanel: JSON array:
+                          optionId: integer option id
+                          optionName: string option name
