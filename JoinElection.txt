@@ -11,6 +11,7 @@ Response parameters:
         success: boolean
         validAuth: boolean
         validPoll: boolean (false for invalid poll id or poll status not active)
+        validEmail: boolean (false for user already voted)
         validEntryCode: boolean
         votingPanel: JSON array:
                           optionId: integer option id
