@@ -1,0 +1,15 @@
+API endpoint name: CastVote.php
+
+
+POST parameters:
+        postAuthKey: our auth key
+        pollId: integer poll id
+        pollOptionId: integer option id of poll
+        
+        
+Response parameters:
+        success: boolean
+        validAuth: boolean
+        validPoll: boolean (false for invalid poll id or status not active)
+        validPollOptionId: boolean (false for invalid option id for the poll)
+        electionCompleted: boolean [this response is present only for once when election is completed for a poll]
